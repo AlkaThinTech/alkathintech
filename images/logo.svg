@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 450 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
+  <!-- Logo ALKA THIN TECH -->
+  <g>
+    <!-- Left bracket frame -->
+    <rect x="8" y="8" width="8" height="84" fill="none" stroke="#1e5aa8" stroke-width="4" stroke-linecap="round"/>
+    <rect x="8" y="8" width="44" height="8" fill="none" stroke="#1e5aa8" stroke-width="4" stroke-linecap="round"/>
+    <rect x="8" y="84" width="44" height="8" fill="none" stroke="#1e5aa8" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Right bracket frame -->
+    <rect x="100" y="8" width="8" height="84" fill="none" stroke="#1e5aa8" stroke-width="4" stroke-linecap="round"/>
+    <rect x="64" y="8" width="44" height="8" fill="none" stroke="#1e5aa8" stroke-width="4" stroke-linecap="round"/>
+    <rect x="64" y="84" width="44" height="8" fill="none" stroke="#1e5aa8" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Text ALKA -->
+    <text x="54" y="32" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1e5aa8" text-anchor="middle">ALKA</text>
+    
+    <!-- Text THIN -->
+    <text x="54" y="56" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1e5aa8" text-anchor="middle">THIN</text>
+    
+    <!-- Text TECH -->
+    <text x="54" y="80" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1e5aa8" text-anchor="middle">TECH</text>
+    
+    <!-- Tagline: thin film innovation -->
+    <text x="270" y="55" font-family="Arial, sans-serif" font-size="14" fill="#8899aa" letter-spacing="2">thin film innovation</text>
+  </g>
+</svg>
