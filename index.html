@@ -20,8 +20,29 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   color: #1a1a2e;
 
-  /* 🌊 FOND BLEU CLAIR - PLUS LUMINEUX */
-  background: linear-gradient(135deg, #e8f4f8 0%, #d4e8f7 50%, #c2d9f0 100%);
+  /* 🔬 FOND PROFESSIONNEL MICROELECTRONIQUE */
+  background: 
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(65, 140, 210, 0.03) 2px,
+      rgba(65, 140, 210, 0.03) 4px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 2px,
+      rgba(65, 140, 210, 0.03) 2px,
+      rgba(65, 140, 210, 0.03) 4px
+    ),
+    radial-gradient(
+      ellipse at 50% 30%,
+      #e8f4f8 0%,
+      #dce9f4 35%,
+      #c8ddf0 70%,
+      #b8d0e8 100%
+    );
   background-attachment: fixed;
   min-height: 100vh;
 }
@@ -30,9 +51,10 @@ body {
 .overlay {
   position: fixed;
   inset: 0;
-  background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.05);
   pointer-events: none;
   z-index: 0;
+  backdrop-filter: blur(0.5px);
 }
 
 /* contenu au-dessus */
