@@ -40,6 +40,26 @@ body > * {
   z-index: 1;
 }
 
+/* LOGO HEADER */
+.logo-header {
+  position: fixed;
+  top: 12px;
+  left: 25px;
+  z-index: 101;
+  opacity: 0;
+  animation: slideDown 0.6s ease-out 1s forwards;
+}
+
+.logo-header img {
+  height: 45px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo-header:hover img {
+  transform: scale(1.05);
+}
+
 /* STICKY NAV */
 .nav-bar {
   position: fixed;
@@ -50,7 +70,7 @@ body > * {
   background: rgba(7, 11, 18, 0.8);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 0;
+  padding: 0 80px 0 0;
   display: flex;
   justify-content: center;
   gap: 40px;
@@ -339,6 +359,15 @@ footer {
 
 /* 📱 RESPONSIVE MOBILE */
 @media (max-width: 768px) {
+  .logo-header {
+    top: 10px;
+    left: 15px;
+  }
+
+  .logo-header img {
+    height: 40px;
+  }
+
   .nav-bar {
     gap: 20px;
     padding: 0 15px;
@@ -406,6 +435,11 @@ footer {
 
 <!-- overlay -->
 <div class="overlay"></div>
+
+<!-- logo header -->
+<a href="#" class="logo-header" aria-label="AlkaThinTech Home">
+  <img src="images/logo.svg" alt="AlkaThinTech Logo">
+</a>
 
 <!-- navigation -->
 <nav class="nav-bar" role="navigation" aria-label="Main navigation">
