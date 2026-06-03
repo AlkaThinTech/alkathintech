@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="AlkaThinTech: Molecular precursor engineering for scalable lithium niobate thin-film photonics. Patented chemistry for integrated photonics and quantum systems.">
-<meta name="keywords" content="lithium niobate, photonics, thin film, DLI-CVD, integrated photonics, quantum">
+<meta name="description" content="AlkaThinTech: Molecular precursor engineering for scalable lithium niobate thin-film photonics and RF filters. Patented chemistry for integrated photonics, RF devices, and quantum systems.">
+<meta name="keywords" content="lithium niobate, photonics, RF filters, thin film, DLI-CVD, integrated photonics, quantum, radiofrequency">
 <meta name="author" content="AlkaThinTech">
-<title>AlkaThinTech | Lithium Niobate Photonics</title>
+<title>AlkaThinTech | Lithium Niobate Photonics & RF Solutions</title>
 
 <style>
 
@@ -252,6 +252,26 @@ li {
   opacity: 1;
 }
 
+/* 📱 TWO-COLUMN LAYOUT */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.feature-block h3 {
+  font-size: clamp(16px, 3vw, 18px);
+  color: #87ceeb;
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+
+.feature-block p {
+  margin: 0;
+  font-size: clamp(13px, 1.8vw, 15px);
+}
+
 /* EMAIL LINK */
 a {
   color: #87ceeb;
@@ -346,6 +366,11 @@ footer {
     gap: 15px;
   }
 
+  .two-col {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
   .scroll-to-top {
     bottom: 20px;
     right: 20px;
@@ -396,11 +421,11 @@ footer {
     <h1>AlkaThinTech</h1>
 
     <div class="subtitle">
-      Molecular precursor engineering for scalable lithium niobate thin-film photonics
+      Molecular precursor engineering for scalable lithium niobate thin-film photonics and RF filters
     </div>
 
     <div class="tagline">
-      PATENTED CHEMISTRY • THIN FILM DEPOSITION • INTEGRATED PHOTONICS
+      PATENTED CHEMISTRY • THIN FILM DEPOSITION • PHOTONICS & RF SOLUTIONS
     </div>
   </div>
 
@@ -409,7 +434,7 @@ footer {
     <div class="card">
       <p>
         AlkaThinTech develops a proprietary molecular precursor platform enabling the controlled
-        deposition of oriented lithium niobate (LiNbO₃) thin films via DLI-CVD processes.
+        deposition of oriented lithium niobate (LiNbO₃) thin films via DLI-CVD processes for integrated photonics and RF applications.
       </p>
       <ul>
         <li>Proprietary lithium precursor chemistry</li>
@@ -429,7 +454,7 @@ footer {
       </div>
       <p>
         Our proprietary molecular precursor technology enables precise control of the DLI-CVD deposition process,
-        ensuring uniform crystallographic orientation and high-quality thin-film formation for integrated photonics applications.
+        ensuring uniform crystallographic orientation and high-quality thin-film formation for integrated photonics and RF device applications.
       </p>
     </div>
   </section>
@@ -473,12 +498,26 @@ footer {
   <section id="apps">
     <h2>Strategic Applications</h2>
     <div class="card">
-      <ul>
-        <li>Integrated electro-optic photonic circuits</li>
-        <li>Space-qualified optical communication systems (ESA-relevant)</li>
-        <li>RF photonics and high-speed modulators</li>
-        <li>Quantum photonics and nonlinear optical systems</li>
-      </ul>
+      <div class="two-col">
+        <div class="feature-block">
+          <h3>🔬 Photonics</h3>
+          <ul>
+            <li>Integrated electro-optic photonic circuits</li>
+            <li>Space-qualified optical communication systems (ESA-relevant)</li>
+            <li>Quantum photonics and nonlinear optical systems</li>
+            <li>Wavelength conversion and optical modulators</li>
+          </ul>
+        </div>
+        <div class="feature-block">
+          <h3>📡 RF & Microwave</h3>
+          <ul>
+            <li>RF surface acoustic wave (SAW) filters</li>
+            <li>High-speed RF modulators and switches</li>
+            <li>Tunable RF resonators and oscillators</li>
+            <li>Next-generation 5G/6G RF front-end components</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -488,7 +527,7 @@ footer {
       <p>
         A full-stack approach combining molecular design, precursor synthesis,
         and thin-film deposition enables atomic-level control of material formation,
-        offering a scalable route to next-generation LiNbO₃ photonic platforms.
+        offering a scalable route to next-generation LiNbO₃ platforms for both photonics and RF applications.
       </p>
     </div>
   </section>
