@@ -171,6 +171,32 @@ li {
   transform: translateY(-2px);
 }
 
+/* 📊 SCHÉMA TECHNIQUE */
+.schema-container {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.schema-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.schema-container img:hover {
+  transform: scale(1.02);
+}
+
+.schema-caption {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #b0b0b0;
+  font-style: italic;
+}
+
 /* EMAIL LINK */
 a {
   color: #87ceeb;
@@ -294,6 +320,7 @@ footer {
 <!-- navigation -->
 <nav class="nav-bar" role="navigation" aria-label="Main navigation">
   <a href="#tech">Technology</a>
+  <a href="#schema">Schema</a>
   <a href="#apps">Applications</a>
   <a href="#value">Value Prop</a>
   <a href="#contact">Contact</a>
@@ -325,6 +352,20 @@ footer {
         <li>Direct growth of functional LiNbO₃ thin films</li>
         <li>Crystallographic orientation control (Z-axis compatible)</li>
       </ul>
+    </div>
+  </section>
+
+  <section id="schema">
+    <h2>DLI-CVD Process Schema</h2>
+    <div class="card">
+      <div class="schema-container">
+        <img src="images/dli-cvd-schema.svg" alt="DLI-CVD deposition process schematic diagram showing precursor injection, vaporization, CVD reactor, and substrate deposition steps">
+        <p class="schema-caption">Direct Liquid Injection CVD process for lithium niobate thin-film deposition</p>
+      </div>
+      <p>
+        Our proprietary molecular precursor technology enables precise control of the DLI-CVD deposition process,
+        ensuring uniform crystallographic orientation and high-quality thin-film formation for integrated photonics applications.
+      </p>
     </div>
   </section>
 
