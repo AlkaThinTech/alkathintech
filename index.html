@@ -5,30 +5,35 @@
 <title>AlkaThinTech</title>
 
 <style>
+
+/* smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
   color: white;
 
-  background-image: url("https://images.unsplash.com/photo-1581091870620-6c3f5b7f6b0b?auto=format&fit=crop&w=1950&q=80");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  /* 🌊 FOND BLEU PREMIUM */
+  background: radial-gradient(circle at top, #bfe6ff 0%, #1b2a41 45%, #070b12 100%);
 }
 
-/* overlay sombre pour lisibilité */
+/* overlay léger profondeur */
 .overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(5, 5, 10, 0.75);
+  inset: 0;
+  background: rgba(0,0,0,0.25);
   pointer-events: none;
   z-index: 0;
 }
 
-
+/* contenu au-dessus */
+body > * {
+  position: relative;
+  z-index: 1;
+}
 
 /* HERO */
 .hero {
@@ -41,26 +46,41 @@ body {
   padding: 40px;
 }
 
+/* 🎬 ANIMATIONS APPLE STYLE */
 h1 {
   font-size: 72px;
   margin: 0;
   letter-spacing: 2px;
   font-weight: 600;
+
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1.2s ease-out forwards;
 }
 
 .subtitle {
   font-size: 22px;
-  color: #7fc7ff;
+  color: #cfe9ff;
   margin-top: 20px;
   max-width: 800px;
   line-height: 1.4;
+
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1.2s ease-out forwards;
+  animation-delay: 0.3s;
 }
 
 .tagline {
   margin-top: 25px;
-  font-size: 16px;
-  color: #aaa;
-  letter-spacing: 1px;
+  font-size: 14px;
+  color: #d0d0d0;
+  letter-spacing: 2px;
+
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1.2s ease-out forwards;
+  animation-delay: 0.6s;
 }
 
 /* SECTIONS */
@@ -68,50 +88,63 @@ section {
   max-width: 950px;
   margin: auto;
   padding: 90px 25px;
+
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease-out forwards;
+  animation-delay: 0.2s;
 }
 
 h2 {
   font-size: 26px;
-  color: #7fc7ff;
+  color: #cfe9ff;
   margin-bottom: 18px;
   letter-spacing: 0.5px;
 }
 
-p {
+p, ul {
   line-height: 1.75;
-  color: #d0d0d0;
+  color: #e6e6e6;
   font-size: 16px;
 }
 
-ul {
-  line-height: 1.9;
-  color: #d0d0d0;
-}
-
-/* CARD STYLE */
+/* 🧊 GLASS CARDS */
 .card {
-  background: #0e0e0e;
+  background: rgba(0,0,0,0.25);
   padding: 25px;
-  border-radius: 12px;
-  border: 1px solid #1f1f1f;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
 }
 
 /* FOOTER */
 footer {
   text-align: center;
   padding: 50px;
-  color: #666;
+  color: #b0b0b0;
   font-size: 13px;
-  border-top: 1px solid #1a1a1a;
+  border-top: 1px solid rgba(255,255,255,0.1);
 }
+
+/* ✨ KEYFRAMES */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 </style>
 </head>
 
 <body>
 
+<!-- overlay -->
+<div class="overlay"></div>
+
 <div class="hero">
   <h1>AlkaThinTech</h1>
-  
+
   <div class="subtitle">
     Molecular precursor engineering for scalable lithium niobate thin-film photonics
   </div>
