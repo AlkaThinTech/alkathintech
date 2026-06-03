@@ -1,82 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>AlkaThinTech</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #0d0d0d;
-      color: white;
-    }
-    header {
-      padding: 80px 20px;
-      text-align: center;
-      background: #111;
-    }
-    h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
-    h2 {
-      color: #9ad1ff;
-      margin-top: 40px;
-    }
-    section {
-      max-width: 800px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-    ul {
-      line-height: 1.8;
-    }
-    footer {
-      text-align: center;
-      padding: 30px;
-      font-size: 14px;
-      color: #aaa;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>AlkaThinTech</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial;
+  background: #070707;
+  color: white;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 72px;
+  margin: 0;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 22px;
+  color: #7fc7ff;
+  margin-top: 20px;
+  max-width: 800px;
+  line-height: 1.4;
+}
+
+.tagline {
+  margin-top: 25px;
+  font-size: 16px;
+  color: #aaa;
+  letter-spacing: 1px;
+}
+
+/* SECTIONS */
+section {
+  max-width: 950px;
+  margin: auto;
+  padding: 90px 25px;
+}
+
+h2 {
+  font-size: 26px;
+  color: #7fc7ff;
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+}
+
+p {
+  line-height: 1.75;
+  color: #d0d0d0;
+  font-size: 16px;
+}
+
+ul {
+  line-height: 1.9;
+  color: #d0d0d0;
+}
+
+/* CARD STYLE */
+.card {
+  background: #0e0e0e;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #1f1f1f;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 50px;
+  color: #666;
+  font-size: 13px;
+  border-top: 1px solid #1a1a1a;
+}
+</style>
 </head>
 
 <body>
 
-<header>
+<div class="hero">
   <h1>AlkaThinTech</h1>
-  <p>Molecular precursors for next-generation lithium niobate thin films</p>
-</header>
+  
+  <div class="subtitle">
+    Molecular precursor engineering for scalable lithium niobate thin-film photonics
+  </div>
+
+  <div class="tagline">
+    PATENTED CHEMISTRY • THIN FILM DEPOSITION • INTEGRATED PHOTONICS
+  </div>
+</div>
 
 <section>
-  <h2>About</h2>
-  <p>
-    AlkaThinTech develops patented molecular precursor technologies
-    enabling scalable deposition of oriented lithium niobate thin films
-    for integrated photonics and advanced electro-optic applications.
-  </p>
+  <h2>Technology Platform</h2>
+  <div class="card">
+    <p>
+      AlkaThinTech develops a proprietary molecular precursor platform enabling the controlled
+      deposition of oriented lithium niobate (LiNbO₃) thin films via DLI-CVD processes.
+    </p>
+    <ul>
+      <li>Patented aminoalkoxide-based lithium precursors</li>
+      <li>Tunable oligomerization: dimeric to hexameric architectures</li>
+      <li>Direct growth of functional LiNbO₃ thin films</li>
+      <li>Crystallographic orientation control (Z-axis compatible)</li>
+    </ul>
+  </div>
+</section>
 
-  <h2>Technology</h2>
-  <ul>
-    <li>Patented aminoalkoxide-based lithium precursors</li>
-    <li>DLI-CVD thin film deposition</li>
-    <li>Controlled oligomerization (dimer to hexamer systems)</li>
-    <li>Oriented LiNbO₃ thin films (Z-cut compatible)</li>
-  </ul>
+<section>
+  <h2>Strategic Applications</h2>
+  <div class="card">
+    <ul>
+      <li>Integrated electro-optic photonic circuits</li>
+      <li>Space-qualified optical communication systems (ESA-relevant)</li>
+      <li>RF photonics and high-speed modulators</li>
+      <li>Quantum photonics and nonlinear optical systems</li>
+    </ul>
+  </div>
+</section>
 
-  <h2>Applications</h2>
-  <ul>
-    <li>Integrated photonics</li>
-    <li>Space communications (ESA-related technologies)</li>
-    <li>RF photonics and modulators</li>
-    <li>Quantum and nonlinear optics</li>
-  </ul>
+<section>
+  <h2>Core Value Proposition</h2>
+  <div class="card">
+    <p>
+      A full-stack approach combining molecular design, precursor synthesis,
+      and thin-film deposition enables atomic-level control of material formation,
+      offering a scalable route to next-generation LiNbO₃ photonic platforms.
+    </p>
+  </div>
+</section>
 
+<section>
   <h2>Contact</h2>
-  <p>anthony.tacnet@email.com</p>
+  <div class="card">
+    <p><b>Email:</b> anthony.tacnet@univ-lyon1.fr</p>
+  </div>
 </section>
 
 <footer>
-  © 2026 AlkaThinTech
+  © 2026 AlkaThinTech — All rights reserved
 </footer>
 
 </body>
