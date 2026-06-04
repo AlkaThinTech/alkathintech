@@ -54,7 +54,8 @@ body > *:not(#bg-canvas) {
 
 /* NAV — bleu clair */
 .nav-bar {
-  position: relative;
+  position: fixed;
+  top: 0; left: 0; right: 0;
   z-index: 100;
 
   /* Effet wafer silicium irisé — dégradé métallique multi-couches */
@@ -90,7 +91,7 @@ body > *:not(#bg-canvas) {
   display: flex;
   justify-content: center;
   gap: 38px;
-  height: 60px;
+  height: 68px;
   align-items: center;
   opacity: 0;
   animation: slideDown 0.6s ease-out 1s forwards;
@@ -152,7 +153,7 @@ body > *:not(#bg-canvas) {
 .nav-bar a {
   color: #0b2d5a;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.5px;
   transition: all 0.25s ease;
@@ -168,6 +169,7 @@ body > *:not(#bg-canvas) {
 /* HERO */
 .hero {
   height: 100vh;
+  padding-top: 68px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -177,7 +179,7 @@ body > *:not(#bg-canvas) {
 }
 
 h1 {
-  font-size: clamp(42px, 10vw, 72px);
+  font-size: clamp(52px, 11vw, 88px);
   margin: 0;
   letter-spacing: 4px;
   font-weight: 700;
@@ -189,7 +191,7 @@ h1 {
 }
 
 .subtitle {
-  font-size: clamp(16px, 4vw, 20px);
+  font-size: clamp(18px, 4vw, 24px);
   color: rgba(180, 230, 255, 0.9);
   margin-top: 20px;
   max-width: 800px;
@@ -201,7 +203,7 @@ h1 {
 
 .tagline {
   margin-top: 25px;
-  font-size: clamp(11px, 1.8vw, 13px);
+  font-size: clamp(13px, 2vw, 16px);
   color: rgba(130, 200, 245, 0.75);
   letter-spacing: 3px;
   opacity: 0;
@@ -220,7 +222,7 @@ section {
 }
 
 h2 {
-  font-size: clamp(20px, 5vw, 26px);
+  font-size: clamp(24px, 5vw, 32px);
   color: #e8f4ff;
   margin-bottom: 18px;
   letter-spacing: 0.5px;
@@ -230,7 +232,7 @@ h2 {
 p, ul {
   line-height: 1.75;
   color: rgba(215, 238, 255, 0.9);
-  font-size: clamp(14px, 2vw, 16px);
+  font-size: clamp(16px, 2vw, 19px);
 }
 ul { list-style-position: inside; }
 li { margin-bottom: 10px; }
@@ -311,12 +313,12 @@ li { margin-bottom: 10px; }
   margin: 30px 0;
 }
 .feature-block h3 {
-  font-size: clamp(16px, 3vw, 18px);
+  font-size: clamp(18px, 3vw, 22px);
   color: #7dd3fc;
   margin-bottom: 12px;
   margin-top: 0;
 }
-.feature-block p { margin: 0; font-size: clamp(13px, 1.8vw, 15px); }
+.feature-block p { margin: 0; font-size: clamp(15px, 1.8vw, 18px); }
 
 /* LINKS */
 a { color: #7dd3fc; text-decoration: none; transition: color 0.2s ease; }
@@ -331,7 +333,7 @@ a:hover { color: #bae6fd; text-decoration: underline; }
 }
 .form-field { display: flex; flex-direction: column; gap: 6px; }
 .form-field label {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 500;
   color: #7dd3fc;
   letter-spacing: 0.3px;
@@ -342,7 +344,7 @@ a:hover { color: #bae6fd; text-decoration: underline; }
   padding: 10px 14px;
   border: 1px solid rgba(120,190,240,0.28);
   border-radius: 8px;
-  font-size: 15px;
+  font-size: 17px;
   font-family: inherit;
   background: rgba(10, 30, 65, 0.55);
   color: #e8f6ff;
@@ -366,9 +368,7 @@ a:hover { color: #bae6fd; text-decoration: underline; }
   border: 1px solid rgba(125,211,252,0.4);
   border-radius: 8px;
   padding: 12px 32px;
-  font-size: 15px;
-  font-weight: 500;
-  cursor: pointer;
+  font-size: 17px;
   letter-spacing: 0.5px;
   transition: all 0.2s ease;
 }
@@ -410,7 +410,7 @@ footer {
   text-align: center;
   padding: 50px;
   color: rgba(140,190,230,0.55);
-  font-size: 13px;
+  font-size: 15px;
   border-top: 1px solid rgba(120,190,240,0.12);
   background: rgba(10,28,60,0.35);
 }
